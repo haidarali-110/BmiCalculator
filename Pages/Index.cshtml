@@ -1,0 +1,52 @@
+﻿@page
+@model BmiCalculator.Pages.IndexModel
+
+<div class="container">
+    <div class="card">
+        <h1>BMI Calculator</h1>
+        <p class="subtitle">Enter your details to calculate your Body Mass Index</p>
+
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Age">Age</label>
+                <input asp-for="Age" class="input" placeholder="e.g. 25" />
+                <span asp-validation-for="Age" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Gender">Gender</label>
+                <select asp-for="Gender" class="input">
+                    <option value="">-- Select --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span asp-validation-for="Gender" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="HeightCm">Height (cm)</label>
+                <input asp-for="HeightCm" class="input" placeholder="e.g. 170" />
+                <span asp-validation-for="HeightCm" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="WeightKg">Weight (kg)</label>
+                <input asp-for="WeightKg" class="input" placeholder="e.g. 65" />
+                <span asp-validation-for="WeightKg" class="error"></span>
+            </div>
+
+            <button type="submit" class="btn">Calculate BMI</button>
+        </form>
+
+        @if (Model.Bmi is not null)
+        {
+            <div class="result">
+                <h2>Your BMI: @Model.Bmi</h2>
+                <p class="classification">Category: <strong>@Model.Classification</strong></p>
+            </div>
+        }
+
+      
+    </div>
+</div>
