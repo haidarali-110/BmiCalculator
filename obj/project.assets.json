@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/student/149/BmiCalculator/BmiCalculator.csproj",
+      "projectUniqueName": "/home/student/BmiCalculator/BmiCalculator.csproj",
       "projectName": "BmiCalculator",
-      "projectPath": "/home/student/149/BmiCalculator/BmiCalculator.csproj",
+      "projectPath": "/home/student/BmiCalculator/BmiCalculator.csproj",
       "packagesPath": "/home/student/.nuget/packages/",
-      "outputPath": "/home/student/149/BmiCalculator/obj/",
+      "outputPath": "/home/student/BmiCalculator/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/student/.nuget/NuGet/NuGet.Config"
