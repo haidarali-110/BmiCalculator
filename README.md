@@ -74,6 +74,3 @@ docker rm demo-container
 docker rmi hello-world        
 ```
 
-
-EOF
-echo "README.md rewritten"
