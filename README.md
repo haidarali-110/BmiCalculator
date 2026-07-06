@@ -4,7 +4,7 @@ A simple, user-friendly Body Mass Index (BMI) calculator web app built with **AS
 
 The app takes **Age**, **Gender**, **Height (cm)**, and **Weight (kg)** as input, calculates BMI, and classifies the result using the standard BMI table.
 
-## Formula
+
 ## Classification Table
 
 classification of bmi range  :
@@ -19,8 +19,7 @@ obese  class 2 35 – 40
 obese  class 3 > 40 
 
 
-## Project Structure
-## Setup Instructions (run locally)
+
 
 
 ### Run the app
